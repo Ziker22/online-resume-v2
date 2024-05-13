@@ -1,0 +1,6 @@
+export interface Experience {
+  companyUrl: string;
+  companyName: string;
+  position: string;
+  startDate: string;
+}

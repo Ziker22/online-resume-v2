@@ -1,0 +1,22 @@
+---
+import type { TExperience } from "../../types/TExperience";
+import ExperienceElement from "./ExperienceElement.astro";
+
+type Props = {
+    data : TExperience[]
+}
+
+const { data } = Astro.props;
+---
+
+<section class="relative max-w-screen-md mx-auto">
+    <ul class="list-none">
+        {
+            data.map((experience, index) => (
+                <ExperienceElement data={experience}/>
+            ))
+        }
+
+    </ul>
+</section>
+

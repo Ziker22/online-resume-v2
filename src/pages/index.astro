@@ -1,11 +1,15 @@
 ---
 import Layout from '../layouts/Layout.astro';
 import Intro from '../components/Intro.astro';
+import ExperienceList from '../components/experience/ExperienceList.astro';
+import { EXPERIENCES } from '../data/indexPageData';
+
 ---
 
 <Layout title="Juraj Slavíček">
 	<main class="h-full w-full">
 		<Intro/>
+		<ExperienceList data={EXPERIENCES}/>
 		
 	</main>
 </Layout>

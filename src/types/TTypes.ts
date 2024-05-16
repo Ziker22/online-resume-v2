@@ -1,5 +1,14 @@
 import type { ImageMetadata } from 'astro';
-import type { TCompany } from './TCompany';
+
+export type TImage = {
+  data: ImageMetadata;
+  alt: string;
+};
+
+export type TCompany = {
+  name: string;
+  logo: ImageMetadata;
+};
 
 export type TExperience = {
   company: TCompany;
@@ -10,4 +19,10 @@ export type TExperience = {
   description: string;
   tech: string[];
   images: ImageMetadata[];
+};
+
+export type TCoreSkill = {
+  name: string;
+  description: string;
+  image: TImage;
 };

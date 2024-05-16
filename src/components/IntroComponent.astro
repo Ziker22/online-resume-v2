@@ -35,11 +35,11 @@ const LOGOS = [
 ];
 ---
 
-<section class="flex flex-col-reverse w-full py-8 lg:py-24 gap-4 lg:flex-row px-4 md:px-8 lg:px-16">
-  <div class="flex flex-col w-full lg:w-1/2">
-    <h1 class="text-4xl font-semibold">Juraj Slavíček</h1>
-    <h2 class="text-3xl text-text-secondary mb-4 font-light font">Lead Software Engineer</h2>
-    <div class="flex my-8 gap-8 flex-wrap">
+<section class="flex w-full flex-col-reverse gap-4 lg:flex-row">
+  <div class="flex w-full flex-col lg:w-1/2">
+    <h1 class="text-5xl font-semibold">Juraj Slavíček</h1>
+    <h2 class="mb-4 text-3xl font-light text-text-secondary">Lead Software Engineer</h2>
+    <div class="my-8 flex flex-wrap gap-8">
       {
         LOGOS.map(({ src, alt, href, title }) => (
           <a href={href} target="_blank">
@@ -48,19 +48,19 @@ const LOGOS = [
         ))
       }
     </div>
-    <p class="text-xl leading-8 text-text-secondary font-light max-w-prose">
+    <p class="max-w-prose text-xl font-light leading-8 text-text-secondary">
       Hi, I’m Juraj, a software engineer with over 10 years of experience in building complex web applications,
       particularly in startups poised for substantial growth.
     </p>
     <br />
-    <p class="text-xl leading-8 text-text-secondary font-light max-w-prose tracking-tight">
+    <p class="max-w-prose text-xl font-light leading-8 tracking-tight text-text-secondary">
       From concept to completion, I have led teams in delivering projects that respond to actual business needs
       effectively. I'm all about taking startups to the next level technically, ensuring they're not just keeping up but
       setting the pace.
     </p>
   </div>
-  <div class="w-100 justify-center w-full lg:w-1/2 flex lg:justify-center pb-4 md:pb-16">
-    <div class="rounded-full w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96">
+  <div class="flex w-full justify-center pb-4 md:pb-16 lg:w-1/2 lg:justify-center">
+    <div class="size-48 rounded-full md:size-72 lg:size-96">
       <video autoplay loop muted playsinline class="rounded-full">
         <source src="/introVideo.mp4" type="video/mp4" />
       </video>

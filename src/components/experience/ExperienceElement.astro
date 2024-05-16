@@ -1,58 +1,43 @@
 ---
-import type { TExperience } from "../../types/TExperience";
-import ExperienceElementHeader from "./ExperienceElementHeader.astro";
+import type { TExperience } from '../../types/TExperience';
+import ExperienceElementHeader from './ExperienceElementHeader.astro';
 
 type Props = {
-    data : TExperience;
-}
+  data: TExperience;
+};
 
-const {data} = Astro.props
-
+const { data } = Astro.props;
 ---
 
-
 <li>
-  <ExperienceElementHeader data={data}/>
-        <div class="p-4">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-            nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
-            Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
-        </div>
+  <ExperienceElementHeader data={data} />
+  <div class="p-4">
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc ultricies fringilla. Nullam sit
+    amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
+    nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies
+    fringilla. Nullam sit amet nunc nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
+    nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies
+    fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
+    Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Donec nec odio vitae nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
+    Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit
+    amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc ultricies fringilla. Nullam sit
+    amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
+    nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies
+    fringilla. Nullam sit amet nunc nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
+    nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies
+    fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
+    Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec Lorem ipsum dolor sit amet, consectetur
+    adipiscing elit. Donec nec odio vitae nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
+    Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit
+    amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
+    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae nunc ultricies fringilla. Nullam sit
+    amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
+    nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies
+    fringilla. Nullam sit amet nunc nec Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec nec odio vitae
+    nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies
+    fringilla. Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec nunc ultricies fringilla.
+    Nullam sit amet nunc nec nunc ultricies fringilla. Nullam sit amet nunc nec
+  </div>
 </li>

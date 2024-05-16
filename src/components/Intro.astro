@@ -8,59 +8,62 @@ import { Image } from 'astro:assets';
 const LOGO_HEIGHT_PX = 32;
 
 const LOGOS = [
-    {
-        src: sevenBridgesLogo,
-        title: "The 7bridges",
-        alt: "The 7 bridges logo",
-        href: "https://www.the7bridges.com/"
-    },
-    {
-        src: simplicityLogo,
-        title: "Simplicity",
-        alt: "Simplicity logo",
-        href : "https://www.onesimplicity.com/"
-    },
-    {
-        src: dreamJobsLogo,
-        title: "Dream jobs",
-        alt: "Dream jobs logo"
-        ,
-        href: "https://www.dream.jobs"
-    },
-    {
-        src: esetLogo,
-        title: "ESET",
-        alt: "ESET logo",
-        href: "https://www.eset.com/"
-    }
+  {
+    src: sevenBridgesLogo,
+    title: 'The 7bridges',
+    alt: 'The 7 bridges logo',
+    href: 'https://www.the7bridges.com/',
+  },
+  {
+    src: simplicityLogo,
+    title: 'Simplicity',
+    alt: 'Simplicity logo',
+    href: 'https://www.onesimplicity.com/',
+  },
+  {
+    src: dreamJobsLogo,
+    title: 'Dream jobs',
+    alt: 'Dream jobs logo',
+    href: 'https://www.dream.jobs',
+  },
+  {
+    src: esetLogo,
+    title: 'ESET',
+    alt: 'ESET logo',
+    href: 'https://www.eset.com/',
+  },
 ];
-
 ---
 
 <section class="flex flex-col-reverse w-full py-8 lg:py-24 gap-4 lg:flex-row px-4 md:px-8 lg:px-16">
-    <div class="flex flex-col w-full lg:w-1/2">
-        <h1 class="text-4xl font-semibold">
-            Juraj Slavíček
-        </h1>
-        <h2 class="text-3xl text-text-secondary mb-4 font-light font">Lead Software Engineer</h2>
-        <div class="flex my-8 gap-8 flex-wrap">
-            {
-                LOGOS.map(({ src, alt, href,title }) => (
-                    <a href={href} target="_blank">
-                        <Image src={src} alt={alt} height={LOGO_HEIGHT_PX} title={title} />
-                    </a>
-        ))    
-        }
-        </div>
-        <p class="text-xl leading-8 text-text-secondary font-light max-w-prose">Hi, I’m Juraj, a software engineer with over 10 years of experience in building complex web applications, particularly in startups poised for substantial growth.</p>
-        <br/>
-        <p class="text-xl leading-8 text-text-secondary font-light max-w-prose tracking-tight">From concept to completion, I have led teams in delivering projects that respond to actual business needs effectively. I'm all about taking startups to the next level technically, ensuring they're not just keeping up but setting the pace.</p>
+  <div class="flex flex-col w-full lg:w-1/2">
+    <h1 class="text-4xl font-semibold">Juraj Slavíček</h1>
+    <h2 class="text-3xl text-text-secondary mb-4 font-light font">Lead Software Engineer</h2>
+    <div class="flex my-8 gap-8 flex-wrap">
+      {
+        LOGOS.map(({ src, alt, href, title }) => (
+          <a href={href} target="_blank">
+            <Image src={src} alt={alt} height={LOGO_HEIGHT_PX} title={title} />
+          </a>
+        ))
+      }
     </div>
-    <div class="w-100 justify-center w-full lg:w-1/2 flex lg:justify-center pb-4 md:pb-16">
-        <div class="rounded-full w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96 ">
-
-            <video autoplay loop muted playsinline class="rounded-full">
-                <source src="/introVideo.mp4" type="video/mp4" />
-            </div>
+    <p class="text-xl leading-8 text-text-secondary font-light max-w-prose">
+      Hi, I’m Juraj, a software engineer with over 10 years of experience in building complex web applications,
+      particularly in startups poised for substantial growth.
+    </p>
+    <br />
+    <p class="text-xl leading-8 text-text-secondary font-light max-w-prose tracking-tight">
+      From concept to completion, I have led teams in delivering projects that respond to actual business needs
+      effectively. I'm all about taking startups to the next level technically, ensuring they're not just keeping up but
+      setting the pace.
+    </p>
+  </div>
+  <div class="w-100 justify-center w-full lg:w-1/2 flex lg:justify-center pb-4 md:pb-16">
+    <div class="rounded-full w-48 h-48 md:w-72 md:h-72 lg:w-96 lg:h-96">
+      <video autoplay loop muted playsinline class="rounded-full">
+        <source src="/introVideo.mp4" type="video/mp4" />
+      </video>
     </div>
+  </div>
 </section>

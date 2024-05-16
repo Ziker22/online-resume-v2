@@ -1,5 +1,5 @@
-import type { ImageMetadata } from "astro";
-import type { TCompany } from "./TCompany";
+import type { ImageMetadata } from 'astro';
+import type { TCompany } from './TCompany';
 
 export type TExperience = {
   company: TCompany;

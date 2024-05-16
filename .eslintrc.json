@@ -1,0 +1,43 @@
+{
+  "extends": ["airbnb-typescript", "eslint:recommended"],
+  "plugins": ["@typescript-eslint", "astro", "prettier", "import", "react"],
+  "parser": "@typescript-eslint/parser",
+  "parserOptions": {
+    "project": "tsconfig.json"
+  },
+  "overrides": [
+    {
+      // Define the configuration for `.astro` file.
+      "files": ["*.astro"],
+      // Allows Astro components to be parsed.
+      "parser": "astro-eslint-parser",
+      // Parse the script in `.astro` as TypeScript by adding the following configuration.
+      // It's the setting you need when using TypeScript.
+      "parserOptions": {
+        "parser": "@typescript-eslint/parser",
+        "extraFileExtensions": [".astro"]
+      },
+      "rules": {
+        // override/add rules settings here, such as:
+        // "astro/no-set-html-directive": "error"
+      }
+    }
+    // ...
+  ],
+  "rules": {
+    "prettier/prettier": ["warn", {}, { "usePrettierrc": true }],
+    "no-shadow": "off",
+    "@typescript-eslint/no-explicit-any": "warn",
+    "no-plusplus": "off",
+    "@typescript-eslint/no-shadow": "error",
+    "no-restricted-globals": "error",
+    "@typescript-eslint/no-unused-vars": "error",
+    "no-nested-ternary": "error",
+    "no-unsafe-optional-chaining": "error",
+    "@typescript-eslint/ban-types": "error",
+    "prefer-const": "error",
+    "@typescript-eslint/no-empty-function": 0,
+    "@typescript-eslint/explicit-module-boundary-types": "off",
+    "react/jsx-filename-extension": [1, { "extensions": [".tsx", ".astro"] }]
+  }
+}

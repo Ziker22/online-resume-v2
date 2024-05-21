@@ -4,44 +4,18 @@ import simplicityLogo from '../images/simplicityLogo.svg';
 import sevenBridgesLogo from '../images/sevenBridgesLogo.svg';
 import dreamJobsLogo from '../images/dreamJobsLogo.svg';
 import { Image } from 'astro:assets';
+import { INTRO_COMPONENT_DATA } from '../data/indexPageData';
 
 const LOGO_HEIGHT_PX = 32;
-
-const LOGOS = [
-  {
-    src: sevenBridgesLogo,
-    title: 'The 7bridges',
-    alt: 'The 7 bridges logo',
-    href: 'https://www.the7bridges.com/',
-  },
-  {
-    src: simplicityLogo,
-    title: 'Simplicity',
-    alt: 'Simplicity logo',
-    href: 'https://www.onesimplicity.com/',
-  },
-  {
-    src: dreamJobsLogo,
-    title: 'Dream jobs',
-    alt: 'Dream jobs logo',
-    href: 'https://www.dream.jobs',
-  },
-  {
-    src: esetLogo,
-    title: 'ESET',
-    alt: 'ESET logo',
-    href: 'https://www.eset.com/',
-  },
-];
 ---
 
 <section class="flex w-full flex-col-reverse gap-4 lg:flex-row">
   <div class="flex w-full flex-col lg:w-1/2">
     <h1 class="text-5xl font-semibold">Juraj Slavíček</h1>
     <h2 class="mb-4 text-3xl font-light text-text-secondary">Lead Software Engineer</h2>
-    <div class="my-8 flex flex-wrap gap-8">
+    <div class="justify-center md:justify-start my-8 flex flex-wrap gap-8">
       {
-        LOGOS.map(({ src, alt, href, title }) => (
+        INTRO_COMPONENT_DATA.map(({ src, alt, href, title }) => (
           <a href={href} target="_blank">
             <Image src={src} alt={alt} height={LOGO_HEIGHT_PX} title={title} />
           </a>

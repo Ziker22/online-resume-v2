@@ -2,6 +2,7 @@
 import CoreSkill from './CoreSkill.astro';
 import reactIcon from '../images/reactIcon.svg';
 import type { TCoreSkill } from '../../types/TTypes';
+import Typography from '../typography/Typography.astro';
 
 type Props = {
   data: TCoreSkill[];
@@ -10,8 +11,8 @@ type Props = {
 const { data } = Astro.props;
 ---
 
-<section>
-  <h1 class="text-4xl font-semibold pb-8 text-center">Core Skills</h1>
+<section class="flex flex-col gap-10">
+  <Typography variant="h1" content="Core skills" className="text-center" />
   <div class="grid gap-4 sm:gap-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
     {data.map((skill) => <CoreSkill name={skill.name} description={skill.description} image={skill.image} />)}
 

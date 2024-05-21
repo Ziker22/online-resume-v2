@@ -1,4 +1,7 @@
 import esetLogo from '../images/esetLogo.svg';
+import sevenBridgesLogo from '../images/sevenBridgesLogo.svg';
+import simplicityLogoSimple from '../images/simplicityLogoSimple.svg';
+import ciklumLogo from '../images/ciklumLogo.svg';
 import type { TCoreSkill, TExperience } from '../types/TTypes';
 import reactIcon from '../images/reactIcon.svg';
 import pythonIcon from '../images/pythonIcon.svg';
@@ -34,12 +37,38 @@ export const CORE_SKILLS: TCoreSkill[] = [
 export const EXPERIENCES: TExperience[] = [
   {
     company: {
-      name: 'ESET',
-      logo: esetLogo,
+      name: '7bridges',
+      logo: sevenBridgesLogo,
+    },
+    isRemote: true,
+    startDate: "Jan 22'",
+    endDate: 'Now',
+    description: 'TBD',
+    images: [],
+    tech: [],
+    title: 'Software Engineer',
+  },
+  {
+    company: {
+      name: 'Simplicity',
+      logo: simplicityLogoSimple,
     },
     isRemote: false,
-    startDate: '2015-05-01',
-    endDate: '2018-08-01',
+    startDate: "Jun 21'",
+    endDate: "Jan 22'",
+    description: 'TBD',
+    images: [],
+    tech: [],
+    title: 'Software Engineer',
+  },
+  {
+    company: {
+      name: 'Ciklum',
+      logo: ciklumLogo,
+    },
+    isRemote: false,
+    startDate: "Aug 18'",
+    endDate: "Jun 21'",
     description: 'TBD',
     images: [],
     tech: [],
@@ -51,37 +80,38 @@ export const EXPERIENCES: TExperience[] = [
       logo: esetLogo,
     },
     isRemote: false,
-    startDate: '2015-05-01',
-    endDate: '2018-08-01',
+    startDate: "Aug 18'",
+    endDate: "Jun 15'",
     description: 'TBD',
     images: [],
     tech: [],
     title: 'Software Engineer',
   },
+];
+
+export const INTRO_COMPONENT_DATA = [
   {
-    company: {
-      name: 'ESET',
-      logo: esetLogo,
-    },
-    isRemote: false,
-    startDate: '2015-05-01',
-    endDate: '2018-08-01',
-    description: 'TBD',
-    images: [],
-    tech: [],
-    title: 'Software Engineer',
+    src: sevenBridgesLogo,
+    title: 'The 7bridges',
+    alt: 'The 7 bridges logo',
+    href: 'https://www.the7bridges.com/',
   },
   {
-    company: {
-      name: 'ESET',
-      logo: esetLogo,
-    },
-    isRemote: false,
-    startDate: '2015-05-01',
-    endDate: '2018-08-01',
-    description: 'TBD',
-    images: [],
-    tech: [],
-    title: 'Software Engineer',
+    src: simplicityLogoSimple,
+    title: 'Simplicity',
+    alt: 'Simplicity logo',
+    href: 'https://www.onesimplicity.com/',
+  },
+  {
+    src: ciklumLogo,
+    title: 'Ciklum western europe',
+    alt: 'Ciklum western europe logo',
+    href: 'https://www.dream.jobs',
+  },
+  {
+    src: esetLogo,
+    title: 'ESET',
+    alt: 'ESET logo',
+    href: 'https://www.eset.com/',
   },
 ];

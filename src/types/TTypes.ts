@@ -1,5 +1,9 @@
 import type { ImageMetadata } from 'astro';
 
+export type TCommonComponentProps = {
+  className?: string;
+};
+
 export type TImage = {
   data: ImageMetadata;
   alt: string;

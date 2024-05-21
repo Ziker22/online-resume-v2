@@ -1,5 +1,7 @@
 ---
-import type { TExperience } from '../../types/TExperience';
+import { Image } from 'astro:assets';
+import type { TExperience } from '../../types/TTypes';
+import Typography from '../typography/Typography.astro';
 
 type Props = {
   data: TExperience;
@@ -8,8 +10,16 @@ type Props = {
 const { data } = Astro.props;
 ---
 
-<div class="sticky top-0 z-1 bg-background shadow-background shadow-xl">
-  <div class="flex justify-between py-4">
-    <h1 class="text-2xl font-bold text-center px-4">{data.company.name}</h1>
+<div class="sticky top-0 z-1 bg-background shadow-background shadow-xl py-2 px-4 lg:px-0">
+  <div class="flex justify-between py-2">
+    <div class="flex flex-col gap-2">
+      <Image src={data.company.logo} alt={data.company.name} class="w-auto h-8" />
+      <p class="font-semibold text-xl">{data.company.name}</p>
+    </div>
+    <span>
+      <div class="border border-opacity-30 border-text rounded-3xl py-1 px-3 font-light text-xs flex items-center">
+        {`${data.startDate}-${data.endDate}`}
+      </div>
+    </span>
   </div>
 </div>

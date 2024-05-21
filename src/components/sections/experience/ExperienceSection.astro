@@ -1,6 +1,6 @@
 ---
-import type { TExperience } from '../../types/TTypes';
-import Typography from '../typography/Typography.astro';
+import type { TExperience } from '../../../types/TTypes';
+import Typography from '../../typography/Typography.astro';
 import ExperienceElement from './ExperienceElement.astro';
 
 type Props = {
@@ -13,6 +13,6 @@ const { data } = Astro.props;
 <section class="relative max-w-screen-md mx-auto flex flex-col gap-10">
   <Typography variant="h1" content="Experience" className="text-center" />
   <ul class="list-none">
-    {data.map((experience, index) => <ExperienceElement data={experience} />)}
+    {data.map((experience) => <ExperienceElement data={experience} />)}
   </ul>
 </section>

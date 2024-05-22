@@ -7,6 +7,25 @@ import reactIcon from '../images/reactIcon.svg';
 import pythonIcon from '../images/pythonIcon.svg';
 import mouseIcon from '../images/mouseIcon.svg';
 
+export const CONTACT_DATA = [
+  {
+    name: 'Email',
+    link: 'mailto:juraj.slavicek@gmail.com',
+  },
+  {
+    name: 'LinkedIn',
+    link: 'https://www.linkedin.com/in/juraj-slavicek-9204b196/',
+  },
+  {
+    name: 'GitHub',
+    link: 'https://github.com/Ziker22',
+  },
+  {
+    name: 'Resume',
+    link: '/resume.pdf',
+  },
+];
+
 export const CORE_SKILLS: TCoreSkill[] = [
   {
     name: 'Software Development',

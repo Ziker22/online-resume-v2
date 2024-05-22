@@ -1,6 +1,7 @@
 ---
 import { Image } from 'astro:assets';
 import type { TExperience } from '../../../types/TTypes';
+import Badge from '../../badge/Badge.astro';
 
 type Props = {
   data: TExperience;
@@ -16,9 +17,9 @@ const { data } = Astro.props;
       <p class="font-semibold text-xl">{data.company.name}</p>
     </div>
     <span>
-      <div class="border border-opacity-30 border-text rounded-3xl py-1 px-3 font-light text-xs flex items-center">
+      <Badge>
         {`${data.startDate}-${data.endDate}`}
-      </div>
+      </Badge>
     </span>
   </div>
 </div>

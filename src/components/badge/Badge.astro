@@ -1,0 +1,15 @@
+---
+import type { TCommonComponentProps } from '../../types/TTypes';
+
+type Props = TCommonComponentProps;
+const className = Astro.props.className;
+---
+
+<div
+  class:list={[
+    'border border-opacity-80 border-text rounded-3xl py-1 px-3 font-light text-xs flex items-center',
+    className,
+  ]}
+>
+  <slot />
+</div>

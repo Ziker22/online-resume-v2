@@ -2,6 +2,7 @@
 import { Image } from 'astro:assets';
 import type { TCoreSkill } from '../../../types/TTypes';
 import Typography from '../../typography/Typography.astro';
+import TypographyUnderlined from '../../typography/TypographyUnderlined.astro';
 type Props = TCoreSkill;
 
 const { name, description, image } = Astro.props;
@@ -10,11 +11,7 @@ const { name, description, image } = Astro.props;
 <div class="border-2 lg:border-r lg:border-l-0 lg:first:border-l-2 px-6 py-10 lg:[&:nth-last-child(2)]:border-r-2">
   <div class="flex gap-4 items-center">
     <Image src={image.data} alt={image.alt} width={48} height={48} class="" />
-    <Typography
-      variant="h3"
-      className="relative font-semibold after:bg-gradient-to-r after:from-primary after:w-full after:h-2 after:absolute after:bottom-0 after:left-0"
-      >{name}</Typography
-    >
+    <TypographyUnderlined color="secondary" variant="h3" className=" font-semibold">{name}</TypographyUnderlined>
   </div>
   <p class="mt-4 text-lg">{description}</p>
 </div>

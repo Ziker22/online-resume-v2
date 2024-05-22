@@ -2,7 +2,7 @@
 
 - [x] - Contact in intro components
 - [ ] - Freelance projects section
-- [ ] - Tewstimonials section
+- [ ] - Testimonials section
 - [ ] - Contact section
 - [ ] - Deployment
 - [ ] - GH actions
@@ -15,3 +15,4 @@
 - [ ] - Show gh history
 - [ ] - Witty 404 page
 - [ ] - witty last thing in core skills
+- [ ] - Floating menu

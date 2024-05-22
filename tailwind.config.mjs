@@ -8,6 +8,7 @@ export default {
       primary: '#c3f73a',
       secondary: '#094d92',
       background: '#000',
+      backgroundSecondary: '#111',
       text: '#fff',
       'text-secondary': '#ced4da',
     },

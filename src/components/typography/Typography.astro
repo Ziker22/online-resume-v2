@@ -5,6 +5,8 @@ type Props = {
   variant: 'h1' | 'h2' | 'h3';
 } & TCommonComponentProps;
 
+export type TypographyProps = Props;
+
 const { variant, className, ...rest } = Astro.props;
 const Element = variant;
 

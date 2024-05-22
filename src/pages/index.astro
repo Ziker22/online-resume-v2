@@ -4,19 +4,24 @@ import IntroSection from '../components/sections/intro/IntroSection.astro';
 import ExperienceSection from '../components/sections/experience/ExperienceSection.astro';
 import { CORE_SKILLS, EXPERIENCES } from '../data/indexPageData';
 import CoreSkillsSection from '../components/sections/coreSkills/CoreSkillsSection.astro';
+import SectionWrapper from '../components/sections/SectionWrapper.astro';
+import FreelanceProjectsSection from '../components/sections/freelance/FreelanceProjectsSection.astro';
 ---
 
 <Layout title="Juraj Slavíček">
   <main class="size-full">
-    <div class="px-4 py-8 md:px-8 md:py-16 lg:px-16 lg:py-24">
+    <SectionWrapper>
       <IntroSection />
-    </div>
-    <div class="px-4 py-8 md:px-8 md:py-16 lg:px-16 lg:py-24">
+    </SectionWrapper>
+    <SectionWrapper>
       <CoreSkillsSection data={CORE_SKILLS} />
-    </div>
-    <div class="px-4 py-8 md:px-8 md:py-16 lg:px-16 lg:py-24">
+    </SectionWrapper>
+    <SectionWrapper>
       <ExperienceSection data={EXPERIENCES} />
-    </div>
+    </SectionWrapper>
+    <SectionWrapper>
+      <FreelanceProjectsSection />
+    </SectionWrapper>
   </main>
 </Layout>
 

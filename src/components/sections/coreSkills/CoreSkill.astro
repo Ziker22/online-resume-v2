@@ -13,8 +13,8 @@ const { name, description, image } = Astro.props;
     <Typography
       variant="h3"
       className="relative font-semibold after:bg-gradient-to-r after:from-primary after:w-full after:h-2 after:absolute after:bottom-0 after:left-0"
-      content={name}
-    />
+      >{name}</Typography
+    >
   </div>
   <p class="mt-4 text-lg">{description}</p>
 </div>

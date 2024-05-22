@@ -11,7 +11,7 @@ const { data } = Astro.props;
 ---
 
 <section class="relative max-w-screen-md mx-auto flex flex-col gap-10">
-  <Typography variant="h1" content="Experience" className="text-center" />
+  <Typography variant="h1" className="text-center">Experience</Typography>
   <ul class="list-none">
     {data.map((experience) => <ExperienceElement data={experience} />)}
   </ul>

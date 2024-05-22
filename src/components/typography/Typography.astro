@@ -2,11 +2,10 @@
 import type { TCommonComponentProps } from '../../types/TTypes';
 
 type Props = {
-  content: string;
   variant: 'h1' | 'h2' | 'h3';
 } & TCommonComponentProps;
 
-const { content, variant, className, ...rest } = Astro.props;
+const { variant, className, ...rest } = Astro.props;
 const Element = variant;
 
 const getClassnameForVariant = () => {
@@ -25,4 +24,4 @@ const getClassnameForVariant = () => {
 const typographyClasses = getClassnameForVariant();
 ---
 
-<Element class:list={[typographyClasses, className]}>{content}</Element>
+<Element class:list={[typographyClasses, className]} {...rest}><slot /></Element>

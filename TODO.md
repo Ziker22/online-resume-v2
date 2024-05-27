@@ -16,3 +16,8 @@
 - [ ] - Witty 404 page
 - [ ] - witty last thing in core skills
 - [ ] - Floating menu
+
+### Nice to have
+
+- [ ] -Light mode
+- [ ] - Full testimonial page

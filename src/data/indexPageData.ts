@@ -13,6 +13,10 @@ export const CONTACT_DATA = [
     link: 'mailto:juraj.slavicek@gmail.com',
   },
   {
+    name: 'Calendly',
+    link: 'https://calendly.com/juraj-slavicek/60-minute-meeting',
+  },
+  {
     name: 'LinkedIn',
     link: 'https://www.linkedin.com/in/juraj-slavicek-9204b196/',
   },

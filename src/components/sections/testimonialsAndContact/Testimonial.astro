@@ -11,7 +11,7 @@ type Props = {
 const { text, author, position } = Astro.props;
 ---
 
-<div class="flex flex-col p-4 md:p-8">
+<div class="flex flex-col px-4 md:px-8">
   <div class="flex w-full items-start py-4">
     <Image src={quoteIcon} alt="Quote icon" class="size-14" />
   </div>
@@ -19,5 +19,5 @@ const { text, author, position } = Astro.props;
     {text}
   </p>
   <p class="text-lg font-semibold">— {author}</p>
-  <p class="font-semibold">{position}</p>
+  <p class="pb-4 font-semibold">{position}</p>
 </div>

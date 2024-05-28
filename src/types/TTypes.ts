@@ -4,6 +4,12 @@ export type TCommonComponentProps = {
   className?: string;
 };
 
+export type TTestimonial = {
+  author: string;
+  text: string;
+  role: string;
+};
+
 export type TImage = {
   data: ImageMetadata;
   alt: string;

@@ -1,0 +1,45 @@
+name: Pull request testing
+
+on:
+  pull_request:
+    branches:
+      - main
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  static-checks-and-unit-tests:
+    name: Static checks & unit tests
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout code
+        uses: actions/checkout@v4
+        with:
+          ref: ${{ github.event.pull_request.head.ref }}
+          fetch-depth: 0
+
+      - name: Install Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20.11.1
+          cache: 'npm'
+
+      - name: Install NPM packages
+        run: npm ci
+        env:
+          NODE_AUTH_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+
+      - name: Linting
+        run: npm run lint
+
+      - name: Formatting
+        run: npm run fmt
+
+      - name: Unit tests
+        run: echo "Not yet"
+
+      - name: Build
+        run: yarn build

@@ -8,7 +8,7 @@
     "build": "astro check && astro build",
     "preview": "astro preview",
     "astro": "astro",
-    "lint": "eslint src/**/*.{ts,astro} ",
+    "lint": "eslint src ",
     "fmt": "prettier --list-different 'src/**/*.{ts,tsx,js,astro}'",
     "fmt:fix": "prettier --write 'src/**/*.{ts,tsx,js,astro}'"
   },

@@ -1,8 +1,6 @@
 ---
 import CoreSkill from './CoreSkill.astro';
-import reactIcon from '../images/reactIcon.svg';
 import type { TCoreSkill } from '../../../types/TTypes';
-import Typography from '../../typography/Typography.astro';
 import TypographyUnderlined from '../../typography/TypographyUnderlined.astro';
 
 type Props = {
@@ -14,9 +12,9 @@ const { data } = Astro.props;
 
 <div class="flex flex-col gap-10">
   <TypographyUnderlined color="primary" variant="h1" className="text-center">Core skills</TypographyUnderlined>
-  <div class="grid gap-4 sm:gap-0 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3">
+  <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-0 lg:grid-cols-3">
     {data.map((skill) => <CoreSkill name={skill.name} description={skill.description} image={skill.image} />)}
 
-    <div class="hidden sm:block lg:hidden border-l-2">Something</div>
+    <div class="hidden border-l-2 sm:block lg:hidden">Something</div>
   </div>
 </div>

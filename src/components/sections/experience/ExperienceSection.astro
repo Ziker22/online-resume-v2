@@ -10,7 +10,7 @@ type Props = {
 const { data } = Astro.props;
 ---
 
-<div class="max-w-screen-md mx-auto flex flex-col gap-10">
+<div class="mx-auto flex max-w-screen-md flex-col gap-10">
   <TypographyUnderlined color="primary" variant="h1" className="text-center">Experience</TypographyUnderlined>
   <ul class="list-none">
     {data.map((experience) => <ExperienceElement data={experience} />)}

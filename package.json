@@ -1,5 +1,6 @@
 {
   "name": "online-resume-v2",
+  "license": "MIT",
   "type": "module",
   "version": "0.0.1",
   "scripts": {

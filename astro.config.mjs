@@ -8,7 +8,6 @@ export default defineConfig({
   image: {
     service: imageService({
       placeholder: 'blurhash',
-      layout: 'constrained',
     }),
   },
 });

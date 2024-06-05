@@ -17,7 +17,7 @@ const { data } = Astro.props;
     <div class="mb-8 flex flex-col gap-2">
       <Typography variant="h2" className="mb-0 text-center">{data.title}</Typography>
       <div class="flex flex-wrap items-center justify-center gap-2 py-4">
-        {data.tech.map((t) => <Badge className="border-secondary/100 ">{t}</Badge>)}
+        {data.tech.map((t) => <Badge className="!border-secondary/100 ">{t}</Badge>)}
       </div>
     </div>
 

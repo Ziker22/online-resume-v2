@@ -30,7 +30,7 @@ export type TExperience = {
   endDate: string | null;
   bulletPoints: string[];
   tech: string[];
-  images: ImageMetadata[];
+  images: string[];
 };
 
 export type TCoreSkill = {

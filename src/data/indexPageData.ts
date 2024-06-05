@@ -6,15 +6,15 @@ import type { TCoreSkill, TExperience } from '../types/TTypes';
 import reactIcon from '../images/reactIcon.svg';
 import pythonIcon from '../images/pythonIcon.svg';
 import mouseIcon from '../images/mouseIcon.svg';
-import simplicityScreen2 from '../images/simplicityScreen2.webp';
-import simplicityScreen3 from '../images/simplicityScreen3.jpg';
-import simplicityScreen1 from '../images/simplicityScreen1.jpg';
-import ciklumScreen1 from '../images/ciklumScreen1.jpg';
-import ciklumScreen2 from '../images/ciklumScreen2.jpg';
-import esetScreen1 from '../images/esetScreen1.png';
-import esetScreen2 from '../images/esetScreen2.png';
-import sevenBridgesSreen1 from '../images/7bScreen1.jpg';
-import sevenBridgesSreen2 from '../images/7bScreen2.jpg';
+const simplicityScreen2 = 'src/images/simplicityScreen2.webp';
+const simplicityScreen3 = 'src/images/simplicityScreen3.jpg';
+const simplicityScreen1 = 'src/images/simplicityScreen1.jpg';
+const ciklumScreen1 = 'src/images/ciklumScreen1.jpg';
+const ciklumScreen2 = 'src/images/ciklumScreen2.jpg';
+const esetScreen1 = 'src/images/esetScreen1.png';
+const esetScreen2 = 'src/images/esetScreen2.png';
+const sevenBridgesSreen1 = 'src/images/7bScreen1.jpg';
+const sevenBridgesSreen2 = 'src/images/7bScreen2.jpg';
 
 export const CONTACT_DATA = [
   {
@@ -152,26 +152,26 @@ export const EXPERIENCES: TExperience[] = [
 export const INTRO_COMPONENT_DATA = [
   {
     src: sevenBridgesLogo,
-    title: 'The 7bridges',
-    alt: 'The 7 bridges logo',
+    title: 'The 7bridges company',
+    alt: 'The 7 bridges',
     href: 'https://www.the7bridges.com/',
   },
   {
     src: simplicityLogoSimple,
     title: 'Simplicity',
-    alt: 'Simplicity logo',
+    alt: 'Simplicity company',
     href: 'https://www.onesimplicity.com/',
   },
   {
     src: ciklumLogo,
     title: 'Ciklum western europe',
-    alt: 'Ciklum western europe logo',
+    alt: 'Ciklum western europe company',
     href: 'https://www.dream.jobs',
   },
   {
     src: esetLogo,
     title: 'ESET',
-    alt: 'ESET logo',
+    alt: 'ESET company',
     href: 'https://www.eset.com/',
   },
 ];

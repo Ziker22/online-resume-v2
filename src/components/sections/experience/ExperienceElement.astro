@@ -28,15 +28,17 @@ const { data } = Astro.props;
 
     <div class="mt-10 flex flex-col gap-4">
       {
-        data.images.map(() => (
+        data.images.map((image) => (
           <Picture
             placeholder="blurred"
             loading="lazy"
-            src="src/images/7bScreen1.jpg"
+            src={image}
             alt={data.title}
             layout="fullWidth"
             attributes={{
-              picture: {},
+              img: {
+                class: 'rounded-lg',
+              },
             }}
           />
         ))

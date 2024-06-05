@@ -7,7 +7,6 @@ export default defineConfig({
   integrations: [tailwind()],
   image: {
     service: imageService({
-      fallbackService: 'vercel',
       placeholder: 'blurhash',
       layout: 'constrained',
     }),

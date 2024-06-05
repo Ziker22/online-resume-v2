@@ -152,26 +152,26 @@ export const EXPERIENCES: TExperience[] = [
 export const INTRO_COMPONENT_DATA = [
   {
     src: sevenBridgesLogo,
-    title: 'The 7bridges',
-    alt: 'The 7 bridges logo',
+    title: 'The 7bridges company',
+    alt: 'The 7 bridges',
     href: 'https://www.the7bridges.com/',
   },
   {
     src: simplicityLogoSimple,
     title: 'Simplicity',
-    alt: 'Simplicity logo',
+    alt: 'Simplicity company',
     href: 'https://www.onesimplicity.com/',
   },
   {
     src: ciklumLogo,
     title: 'Ciklum western europe',
-    alt: 'Ciklum western europe logo',
+    alt: 'Ciklum western europe company',
     href: 'https://www.dream.jobs',
   },
   {
     src: esetLogo,
     title: 'ESET',
-    alt: 'ESET logo',
+    alt: 'ESET company',
     href: 'https://www.eset.com/',
   },
 ];

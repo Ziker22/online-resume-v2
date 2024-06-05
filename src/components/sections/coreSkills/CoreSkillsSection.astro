@@ -15,6 +15,16 @@ const { data } = Astro.props;
   <div class="grid grid-cols-1 gap-4 sm:grid-cols-2 sm:gap-0 lg:grid-cols-3">
     {data.map((skill) => <CoreSkill name={skill.name} description={skill.description} image={skill.image} />)}
 
-    <div class="hidden border-l-2 sm:block lg:hidden">Something</div>
+    <div class="hidden border-l-2 sm:block lg:hidden">
+      <div class="mx-6 my-10 border-l-8 border-tertiary">
+        <div class="pl-4">
+          <p class="text-xl">
+            Any fool can write code that a computer can understand. Good programmers write code that humans can
+            understand.
+          </p>
+          <p class="mt-8 text-sm text-text-secondary">- Martin Fowler</p>
+        </div>
+      </div>
+    </div>
   </div>
 </div>

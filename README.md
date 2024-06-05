@@ -1,21 +1,23 @@
 ### Things to be done before go-live
 
-- [x] - Contact in intro components
-- [ ] - Freelance projects section
-- [x] - Testimonials section
-- [x] - Contact section
-- [ ] - Deployment
-- [x] - GH actions
 - [ ] - Shoot video
+- [ ] - Freelance projects section
 - [ ] - Design review
+- [ ] - SHow blogs
+- [ ] - Make contacts sticky
+- [ ] - Deployment
 - [ ] - Analytics
 - [ ] - Content
-- [ ] - Update resume (+ link)
-- [ ] - SHow blogs
 - [ ] - Show gh history
 - [ ] - Witty 404 page
-- [ ] - witty last thing in core skills
 - [ ] - Floating menu
+- [ ] - Align dates with CV
+- [x] - witty last thing in core skills
+- [x] - Update resume (+ link)
+- [x] - Contact in intro components
+- [x] - Testimonials section
+- [x] - GH actions
+- [x] - Contact section
 
 ### Nice to have
 

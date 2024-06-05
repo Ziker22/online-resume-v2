@@ -13,6 +13,9 @@ import ciklumScreen1 from '../images/ciklumScreen1.jpg';
 import ciklumScreen2 from '../images/ciklumScreen2.jpg';
 import esetScreen1 from '../images/esetScreen1.png';
 import esetScreen2 from '../images/esetScreen2.png';
+import sevenBridgesSreen1 from '../images/7bScreen1.jpg';
+import sevenBridgesSreen2 from '../images/7bScreen2.jpg';
+
 export const CONTACT_DATA = [
   {
     name: 'Email',
@@ -71,6 +74,7 @@ export const EXPERIENCES: TExperience[] = [
     company: {
       name: '7bridges',
       logo: sevenBridgesLogo,
+      url: 'https://www.the7bridges.com/',
     },
     isRemote: true,
     startDate: '2022',
@@ -81,7 +85,7 @@ export const EXPERIENCES: TExperience[] = [
       'Led a significant refactoring and modernization of a complex JavaScript codebase, transitioning to TypeScript while maintaining ongoing production operations and shipping new features. Enhanced code maintainability, and reduced runtime errors. Increased TypeScript integration from 14% to 87%.',
       'Successfully introduced a 75% improvement in support time by introducing state-of-the-art engineering practices, which dramatically improved productivity and allowed for greater focus on core development tasks.',
     ],
-    images: [],
+    images: [sevenBridgesSreen1, sevenBridgesSreen2],
     tech: ['React', 'GraphQL', 'Django', 'Python', ' TypeScript'],
     title: 'Lead Software Engineer',
   },
@@ -89,10 +93,11 @@ export const EXPERIENCES: TExperience[] = [
     company: {
       name: 'Simplicity',
       logo: simplicityLogoSimple,
+      url: 'https://www.onesimplicity.com/',
     },
     isRemote: false,
-    startDate: "Jun 21'",
-    endDate: "Jan 22'",
+    startDate: '2021',
+    endDate: '2022',
     bulletPoints: [
       "Contributed to Simplicity’s mission of transforming cities into AI-powered hubs by leading the development of web and mobile applications, enhancing the urban experience for over 50 million residents across 120 cities worldwide. I joined the team following a major capital raise and played a pivotal role in the company's rapid expansion from inception to operations in all major U.S. cities, including New York, Los Angeles, and Miami.",
       'Led a team of 5 front-end engineers in the greenfield development of multiple complex web applications for city officials and a native mobile app for residents on iOS and Android, establishing the entire front-end architecture.',
@@ -107,10 +112,11 @@ export const EXPERIENCES: TExperience[] = [
     company: {
       name: 'Ciklum',
       logo: ciklumLogo,
+      url: 'https://www.ciklum.com/',
     },
     isRemote: false,
-    startDate: "Aug 18'",
-    endDate: "Jun 21'",
+    startDate: '2018',
+    endDate: '2021',
     bulletPoints: [
       'In Ciklum I was part of multiple high-profile software development projects across fashion, real estate, e-commerce, and financial sectors as both a senior and lead engineer, guiding architectural and technical direction for global platforms like Peek-Cloppenburg, Der Standard, and others.',
       'Designed and implemented modern frontend architectures and established robust testing frameworks, introducing CI/CD pipelines and code quality systems to ensure scalable and maintainable software solutions.',
@@ -126,10 +132,11 @@ export const EXPERIENCES: TExperience[] = [
     company: {
       name: 'ESET',
       logo: esetLogo,
+      url: 'https://www.eset.com/',
     },
     isRemote: false,
-    startDate: "Aug 18'",
-    endDate: "Jun 15'",
+    startDate: '2015',
+    endDate: '2018',
     bulletPoints: [
       'In ESET a global leader in digital security, providing advanced antivirus and cybersecurity solutions I transitioned from a junior to a senior developer role, taking ownership of a handful of critical features that impacted millions of users.',
       'Introduced and integrated React into the existing Java codebase, modernizing the application architecture and improving maintainability while also enabling a transition from on-premise to cloud.',

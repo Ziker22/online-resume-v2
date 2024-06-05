@@ -18,6 +18,7 @@ export type TImage = {
 export type TCompany = {
   name: string;
   logo: ImageMetadata;
+  url: string;
 };
 
 export type TExperience = {

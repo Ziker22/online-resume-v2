@@ -3,6 +3,7 @@ import type { TExperience } from '../../../types/TTypes';
 import ExperienceElementHeader from './ExperienceElementHeader.astro';
 import Typography from '../../typography/Typography.astro';
 import { Image } from 'astro:assets';
+import Badge from '../../badge/Badge.astro';
 type Props = {
   data: TExperience;
 };
@@ -13,20 +14,24 @@ const { data } = Astro.props;
 <li>
   <ExperienceElementHeader data={data} />
   <div class="relative py-6 lg:px-0">
-    <Typography variant="h2" className="mb-8 text-center">{data.title}</Typography>
+    <div class="mb-8 flex flex-col gap-2">
+      <Typography variant="h2" className="mb-0 text-center">{data.title}</Typography>
+      <div class="flex flex-wrap items-center justify-center gap-2 py-4">
+        {data.tech.map((t) => <Badge className="border-secondary/100 ">{t}</Badge>)}
+      </div>
+    </div>
 
     <ul class="space-y-6 text-text-secondary">
-      {
-        data.bulletPoints.map((bulletPoint) => (
-          <li class="mb-2 text-base before:left-0 before:top-0 before:mr-4 before:size-4 before:text-text-secondary before:content-['→']">
-            {bulletPoint}
-          </li>
-        ))
-      }
+      {data.bulletPoints.map((bulletPoint) => <li class="mb-2 text-base ">{bulletPoint}</li>)}
     </ul>
 
     <div class="mt-10 flex flex-col gap-4">
-      {data.images.map((image) => <Image src={image} alt={data.title} class="h-auto w-full rounded-lg" />)}
+      {
+        data.images.map((image) => (
+          <Image loading="lazy" src={image} alt={data.title} class="h-auto w-full rounded-lg" />
+        ))
+      }
     </div>
+    <hr class="mt-12 h-px border-0 bg-text-secondary opacity-50" />
   </div>
 </li>

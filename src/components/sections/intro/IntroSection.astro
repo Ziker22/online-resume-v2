@@ -13,7 +13,7 @@ const LOGO_HEIGHT_PX = 32;
       {
         INTRO_COMPONENT_DATA.map(({ src, alt, href, title }) => (
           <a href={href} target="_blank">
-            <Image src={src} alt={alt} height={LOGO_HEIGHT_PX} title={title} />
+            <Image loading="eager" src={src} alt={alt} height={LOGO_HEIGHT_PX} title={title} />
           </a>
         ))
       }

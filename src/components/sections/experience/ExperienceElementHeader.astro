@@ -16,10 +16,15 @@ const { data } = Astro.props;
       <Image src={data.company.logo} alt={data.company.name} class="h-8 w-auto" />
       <p class="text-xl font-semibold">{data.company.name}</p>
     </div>
-    <span>
-      <Badge>
-        {`${data.startDate}-${data.endDate}`}
-      </Badge>
-    </span>
+    <div class="h-full">
+      <div>
+        <Badge>
+          {`${data.startDate}-${data.endDate}`}
+        </Badge>
+      </div>
+      <div class="mt-4 text-center text-xs text-text-secondary">
+        {data.location}
+      </div>
+    </div>
   </div>
 </div>

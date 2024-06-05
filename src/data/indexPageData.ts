@@ -6,7 +6,13 @@ import type { TCoreSkill, TExperience } from '../types/TTypes';
 import reactIcon from '../images/reactIcon.svg';
 import pythonIcon from '../images/pythonIcon.svg';
 import mouseIcon from '../images/mouseIcon.svg';
-
+import simplicityScreen2 from '../images/simplicityScreen2.webp';
+import simplicityScreen3 from '../images/simplicityScreen3.jpg';
+import simplicityScreen1 from '../images/simplicityScreen1.jpg';
+import ciklumScreen1 from '../images/ciklumScreen1.jpg';
+import ciklumScreen2 from '../images/ciklumScreen2.jpg';
+import esetScreen1 from '../images/esetScreen1.png';
+import esetScreen2 from '../images/esetScreen2.png';
 export const CONTACT_DATA = [
   {
     name: 'Email',
@@ -67,12 +73,17 @@ export const EXPERIENCES: TExperience[] = [
       logo: sevenBridgesLogo,
     },
     isRemote: true,
-    startDate: "Jan 22'",
+    startDate: '2022',
+    location: 'London, UK',
     endDate: 'Now',
-    description: 'TBD',
+    bulletPoints: [
+      'Led technical efforts at 7Bridges, an AI-powered supply chain management innovator, enhancing customer experience and automation for clients like Philipp Plein and Huel.',
+      'Led a significant refactoring and modernization of a complex JavaScript codebase, transitioning to TypeScript while maintaining ongoing production operations and shipping new features. Enhanced code maintainability, and reduced runtime errors. Increased TypeScript integration from 14% to 87%.',
+      'Successfully introduced a 75% improvement in support time by introducing state-of-the-art engineering practices, which dramatically improved productivity and allowed for greater focus on core development tasks.',
+    ],
     images: [],
-    tech: [],
-    title: 'Software Engineer',
+    tech: ['React', 'GraphQL', 'Django', 'Python', ' TypeScript'],
+    title: 'Lead Software Engineer',
   },
   {
     company: {
@@ -82,10 +93,15 @@ export const EXPERIENCES: TExperience[] = [
     isRemote: false,
     startDate: "Jun 21'",
     endDate: "Jan 22'",
-    description: 'TBD',
-    images: [],
-    tech: [],
-    title: 'Software Engineer',
+    bulletPoints: [
+      "Contributed to Simplicity’s mission of transforming cities into AI-powered hubs by leading the development of web and mobile applications, enhancing the urban experience for over 50 million residents across 120 cities worldwide. I joined the team following a major capital raise and played a pivotal role in the company's rapid expansion from inception to operations in all major U.S. cities, including New York, Los Angeles, and Miami.",
+      'Led a team of 5 front-end engineers in the greenfield development of multiple complex web applications for city officials and a native mobile app for residents on iOS and Android, establishing the entire front-end architecture.',
+      'Utilized a tech stack comprising Next.js, React, React Native, Expo Cypress, Node.js, and GraphQL to build robust, maintainable, and highly scalable applications.',
+    ],
+    images: [simplicityScreen2, simplicityScreen3, simplicityScreen1],
+    tech: ['React', 'React Native', ' Expo', 'Cypress', 'Node.js', 'GraphQL'],
+    title: 'Lead Frontend Engineer ',
+    location: 'Bratislava, Slovakia',
   },
   {
     company: {
@@ -95,10 +111,16 @@ export const EXPERIENCES: TExperience[] = [
     isRemote: false,
     startDate: "Aug 18'",
     endDate: "Jun 21'",
-    description: 'TBD',
-    images: [],
-    tech: [],
-    title: 'Software Engineer',
+    bulletPoints: [
+      'In Ciklum I was part of multiple high-profile software development projects across fashion, real estate, e-commerce, and financial sectors as both a senior and lead engineer, guiding architectural and technical direction for global platforms like Peek-Cloppenburg, Der Standard, and others.',
+      'Designed and implemented modern frontend architectures and established robust testing frameworks, introducing CI/CD pipelines and code quality systems to ensure scalable and maintainable software solutions.',
+      'Delivered high-performance software, both in greenfield projects and legacy rewrites, capable of handling tens of HTTP requests per second, demonstrating exceptional efficiency and scalability.',
+      'Led and mentored a substantial number of full-stack developers across three distinct projects.',
+    ],
+    images: [ciklumScreen1, ciklumScreen2],
+    location: 'Bratislava, Slovakia',
+    tech: ['React', 'Next.js', 'TypeScript', 'GraphQL', 'Java', 'Spring Boot', 'Scala', 'Docker', 'Azure'],
+    title: 'Senior Fullstack Engineer',
   },
   {
     company: {
@@ -108,9 +130,14 @@ export const EXPERIENCES: TExperience[] = [
     isRemote: false,
     startDate: "Aug 18'",
     endDate: "Jun 15'",
-    description: 'TBD',
-    images: [],
-    tech: [],
+    bulletPoints: [
+      'In ESET a global leader in digital security, providing advanced antivirus and cybersecurity solutions I transitioned from a junior to a senior developer role, taking ownership of a handful of critical features that impacted millions of users.',
+      'Introduced and integrated React into the existing Java codebase, modernizing the application architecture and improving maintainability while also enabling a transition from on-premise to cloud.',
+      'Participated in creating a company-wide component library, standardizing UI components, and promoting reusability across different projects.',
+    ],
+    location: 'Bratislava, Slovakia',
+    images: [esetScreen1, esetScreen2],
+    tech: ['TypeScript', 'Java', 'GWT (Google web toolkit)', 'gRPC'],
     title: 'Software Engineer',
   },
 ];

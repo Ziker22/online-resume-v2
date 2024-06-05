@@ -23,10 +23,11 @@ export type TCompany = {
 export type TExperience = {
   company: TCompany;
   isRemote: boolean;
+  location: string;
   title: string;
   startDate: string;
   endDate: string | null;
-  description: string;
+  bulletPoints: string[];
   tech: string[];
   images: ImageMetadata[];
 };

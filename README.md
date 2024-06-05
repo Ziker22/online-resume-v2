@@ -7,11 +7,11 @@
 - [ ] - Make contacts sticky
 - [ ] - Deployment
 - [ ] - Analytics
-- [ ] - Content
 - [ ] - Show gh history
 - [ ] - Witty 404 page
 - [ ] - Floating menu
-- [ ] - Align dates with CV
+- [x] - Align dates with CV
+- [x] - Content
 - [x] - witty last thing in core skills
 - [x] - Update resume (+ link)
 - [x] - Contact in intro components

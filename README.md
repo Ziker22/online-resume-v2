@@ -5,11 +5,11 @@
 - [ ] - Design review
 - [ ] - SHow blogs
 - [ ] - Make contacts sticky
-- [ ] - Deployment
 - [ ] - Analytics
 - [ ] - Show gh history
 - [ ] - Witty 404 page
 - [ ] - Floating menu
+- [x] - Deployment
 - [x] - Align dates with CV
 - [x] - Content
 - [x] - witty last thing in core skills

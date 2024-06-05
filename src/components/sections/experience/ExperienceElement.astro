@@ -2,7 +2,8 @@
 import type { TExperience } from '../../../types/TTypes';
 import ExperienceElementHeader from './ExperienceElementHeader.astro';
 import Typography from '../../typography/Typography.astro';
-import { Image } from 'astro:assets';
+import { Picture } from 'astro-imagetools/components';
+
 import Badge from '../../badge/Badge.astro';
 type Props = {
   data: TExperience;
@@ -28,7 +29,16 @@ const { data } = Astro.props;
     <div class="mt-10 flex flex-col gap-4">
       {
         data.images.map((image) => (
-          <Image loading="lazy" src={image} alt={data.title} class="h-auto w-full rounded-lg" />
+          <Picture
+            placeholder="blurred"
+            loading="lazy"
+            src="src/images/7bScreen1.jpg"
+            alt={data.title}
+            layout="fullWidth"
+            attributes={{
+              class: 'rounded-lg',
+            }}
+          />
         ))
       }
     </div>

@@ -9,6 +9,7 @@
 - [ ] - Show gh history
 - [ ] - Witty 404 page
 - [ ] - Floating menu
+- [ ] - Fix opengraph problems
 - [x] - Deployment
 - [x] - Align dates with CV
 - [x] - Content

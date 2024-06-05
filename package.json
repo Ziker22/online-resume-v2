@@ -40,6 +40,6 @@
     "prettier-plugin-astro": "^0.13.0"
   },
   "overrides": {
-    "sharp": "0.33.0"
+    "sharp": "0.33.1"
   }
 }

@@ -33,7 +33,8 @@ export const CONTACT_DATA = [
 export const CORE_SKILLS: TCoreSkill[] = [
   {
     name: 'Software Development',
-    description: 'I have experience in developing software in various languages and frameworks.',
+    description:
+      'Lead Software Engineer with 10+ years in full-stack development, excelling in problem-solving, code quality, and agile practices.',
     image: {
       data: mouseIcon,
       alt: 'Computer mouse icon',
@@ -41,7 +42,8 @@ export const CORE_SKILLS: TCoreSkill[] = [
   },
   {
     name: 'Frontend engineering',
-    description: 'I have experience in developing software in various languages and frameworks.',
+    description:
+      'Expert in frontend development, crafting scalable web and mobile apps with React, React Native and Next.js, focused on top-tier user experiences.',
     image: {
       data: reactIcon,
       alt: 'React icon',
@@ -49,7 +51,8 @@ export const CORE_SKILLS: TCoreSkill[] = [
   },
   {
     name: 'Backend engineering',
-    description: 'I have experience in developing software in various languages and frameworks.',
+    description:
+      'Competent in backend engineering, experienced with Node.js, Django, and PostgreSQL, focusing on integrating front-end solutions and managing APIs.',
     image: {
       data: pythonIcon,
       alt: 'Python icon',

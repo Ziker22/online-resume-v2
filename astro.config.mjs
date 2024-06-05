@@ -8,10 +8,4 @@ export default defineConfig({
   integrations: [tailwind()],
   output: 'server',
   adapter: vercel(),
-  image: {
-    service: imageService({
-      fallbackService: 'vercel',
-      placeholder: 'blurhash',
-    }),
-  },
 });

@@ -2,6 +2,7 @@ import type { ImageMetadata } from 'astro';
 
 export type TCommonComponentProps = {
   className?: string;
+  id?: string;
 };
 
 export type TTestimonial = {

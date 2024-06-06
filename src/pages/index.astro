@@ -2,22 +2,24 @@
 import Layout from '../layouts/Layout.astro';
 import IntroSection from '../components/sections/intro/IntroSection.astro';
 import ExperienceSection from '../components/sections/experience/ExperienceSection.astro';
-import { CORE_SKILLS, EXPERIENCES } from '../data/indexPageData';
+import { CORE_SKILLS, EXPERIENCES, IndexPageSectionId } from '../data/indexPageData';
 import CoreSkillsSection from '../components/sections/coreSkills/CoreSkillsSection.astro';
 import SectionWrapper from '../components/sections/SectionWrapper.astro';
 // import FreelanceProjectsSection from '../components/sections/freelance/FreelanceProjectsSection.astro';
 import TestimonialsAndContactSection from '../components/sections/testimonialsAndContact/TestimonialsAndContactSection.astro';
+import FloatingMenu from '../components/menu/FloatingMenu.astro';
 ---
 
 <Layout title="Juraj Slavíček">
+  <FloatingMenu />
   <main class="size-full">
-    <SectionWrapper>
+    <SectionWrapper id={IndexPageSectionId.INTRO}>
       <IntroSection />
     </SectionWrapper>
-    <SectionWrapper>
+    <SectionWrapper id={IndexPageSectionId.CORE_SKILLS}>
       <CoreSkillsSection data={CORE_SKILLS} />
     </SectionWrapper>
-    <SectionWrapper>
+    <SectionWrapper id={IndexPageSectionId.EXPERIENCES}>
       <ExperienceSection data={EXPERIENCES} />
     </SectionWrapper>
     <!-- <SectionWrapper>

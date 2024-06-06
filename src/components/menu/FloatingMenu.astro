@@ -5,11 +5,11 @@ const data = {
   sections: [
     {
       id: IndexPageSectionId.INTRO,
-      title: '',
+      title: 'About',
     },
     {
       id: IndexPageSectionId.CORE_SKILLS,
-      title: 'Skills',
+      title: '',
     },
     {
       id: IndexPageSectionId.EXPERIENCES,
@@ -25,13 +25,18 @@ const data = {
 
 <nav
   id="main-nav"
-  class="absolute bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-3xl border-2 border-tertiary bg-background px-8 text-text-secondary opacity-0 shadow-md shadow-background transition-opacity"
+  class="absolute bottom-8 left-1/2 z-50 -translate-x-1/2
+  rounded-3xl border border-white bg-background px-6
+   text-text-secondary opacity-0 shadow-md shadow-backgroundSecondary transition-opacity"
 >
   <ul class="flex list-none gap-2">
     {
       data.sections.map((section) => (
         <li class="flex items-center gap-2 ">
-          <a class="h-full py-4 font-bold text-text-secondary" href={`#${section.id}`}>
+          <a
+            class="h-full py-4 font-bold text-text-secondary transition-colors hover:text-white"
+            href={`#${section.id}`}
+          >
             {section.title}
           </a>
         </li>

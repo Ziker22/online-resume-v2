@@ -16,6 +16,13 @@ const esetScreen2 = 'src/images/esetScreen2.png';
 const sevenBridgesSreen1 = 'src/images/7bScreen1.jpg';
 const sevenBridgesSreen2 = 'src/images/7bScreen2.jpg';
 
+export enum IndexPageSectionId {
+  INTRO = 'intro',
+  EXPERIENCES = 'experiences',
+  CORE_SKILLS = 'core-skills',
+  TESTIMONIALS = 'testimonials',
+}
+
 export const CONTACT_DATA = [
   {
     name: 'Email',

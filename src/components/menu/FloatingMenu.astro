@@ -1,0 +1,84 @@
+---
+import { IndexPageSectionId } from '../../data/indexPageData';
+
+const data = {
+  sections: [
+    {
+      id: IndexPageSectionId.INTRO,
+      title: '',
+    },
+    {
+      id: IndexPageSectionId.CORE_SKILLS,
+      title: 'Skills',
+    },
+    {
+      id: IndexPageSectionId.EXPERIENCES,
+      title: 'Experience',
+    },
+    {
+      id: IndexPageSectionId.TESTIMONIALS,
+      title: 'Testimonials',
+    },
+  ],
+};
+---
+
+<nav
+  id="main-nav"
+  class="absolute bottom-8 left-1/2 z-50 -translate-x-1/2 rounded-3xl border-2 border-tertiary bg-background px-8 text-text-secondary opacity-0 shadow-md shadow-background transition-opacity"
+>
+  <ul class="flex list-none gap-2">
+    {
+      data.sections.map((section) => (
+        <li class="flex items-center gap-2 ">
+          <a class="h-full py-4 font-bold text-text-secondary" href={`#${section.id}`}>
+            {section.title}
+          </a>
+        </li>
+      ))
+    }
+  </ul>
+</nav>
+<script>
+  import { IndexPageSectionId } from '../../data/indexPageData';
+
+  const nav = document.getElementById('main-nav');
+  const introSection = document.getElementById(IndexPageSectionId.INTRO);
+  const coreSkillsSection = document.getElementById(IndexPageSectionId.CORE_SKILLS);
+  const experiencesSection = document.getElementById(IndexPageSectionId.EXPERIENCES);
+  const testimonialsSection = document.getElementById(IndexPageSectionId.TESTIMONIALS);
+  const sections = [introSection, coreSkillsSection, experiencesSection, testimonialsSection].filter(
+    (f): f is HTMLElement => !!f,
+  );
+
+  const observer = new IntersectionObserver(
+    (entries) => {
+      // hid nav if intro is intersecting
+      if (entries[0].isIntersecting && entries[0].target.id === IndexPageSectionId.INTRO) {
+        nav?.classList.add('opacity-0');
+      } else {
+        nav?.classList.remove('opacity-0');
+      }
+
+      entries.forEach((entry) => {
+        const id = entry.target.id;
+        const navLink = nav?.querySelector(`a[href="#${id}"]`);
+        if (entry.isIntersecting) {
+          navLink?.classList.add('text-text');
+          navLink?.classList.remove('text-text-secondary');
+        } else {
+          navLink?.classList.remove('text-text');
+          navLink?.classList.add('text-text-secondary');
+        }
+      });
+    },
+    {
+      rootMargin: '0px',
+      threshold: 0.1,
+    },
+  );
+
+  sections.forEach((section) => {
+    observer.observe(section);
+  });
+</script>

@@ -1,0 +1,16 @@
+name: Pull request testing
+
+on:
+  push:
+    branches:
+      - main
+
+concurrency:
+  group: main_branch::${{ github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  ui-testing:
+    name: UI Testing
+    uses: ./.github/workflows/e2e.yml
+    secrets: inherit

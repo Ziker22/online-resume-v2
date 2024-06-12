@@ -23,4 +23,4 @@
 - [ ] - Show gh history
 - [ ] - Witty 404 page
 - [ ] - Fix opengraph problems
-- [ ] - Visual testing
+- [x] - Visual testing

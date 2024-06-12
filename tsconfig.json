@@ -3,5 +3,5 @@
   "compilerOptions": {
     "types": ["cypress", "@argos-ci/cypress/support"]
   },
-  "include": ["cypress/**/*.ts"]
+  "include": ["cypress/**/*.ts", "src/**/*.ts", "src/**/*.tsx", "src/**/*.astro"]
 }

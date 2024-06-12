@@ -1,19 +1,10 @@
-name: Pull request testing
+name: E2e tests
 
 on:
-  push:
-    branches:
-      - main
-  pull_request:
-    branches:
-      - main
-
-concurrency:
-  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
-  cancel-in-progress: true
+  workflow_call:
 
 jobs:
-  static-checks-and-unit-tests:
+  e2e-tests:
     name: E2e tests
     runs-on: ubuntu-latest
 

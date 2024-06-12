@@ -40,6 +40,7 @@ jobs:
 
       - name: Unit tests
         run: echo "Not yet"
-
-      - name: Build
-        run: yarn build
+  ui-testing:
+    name: UI Testing
+    uses: ./.github/workflows/e2e.yml
+    secrets: inherit

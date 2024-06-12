@@ -11,7 +11,8 @@
     "astro": "astro",
     "lint": "eslint src ",
     "fmt": "prettier --list-different 'src/**/*.{ts,tsx,js,astro}'",
-    "fmt:fix": "prettier --write 'src/**/*.{ts,tsx,js,astro}'"
+    "fmt:fix": "prettier --write 'src/**/*.{ts,tsx,js,astro}'",
+    "e2e:ci": "npx cypress run"
   },
   "dependencies": {
     "@astrojs/check": "^0.6.0",
@@ -24,7 +25,9 @@
     "typescript": "^5.4.5"
   },
   "devDependencies": {
+    "@argos-ci/cypress": "^2.0.4",
     "@typescript-eslint/parser": "^7.9.0",
+    "cypress": "^13.11.0",
     "eslint": "^8.57.0",
     "eslint-config-airbnb-typescript": "^18.0.0",
     "eslint-config-prettier": "^9.1.0",

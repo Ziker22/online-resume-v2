@@ -1,4 +1,4 @@
-describe('template spec', () => {
+describe('Take index page screenshots', () => {
   it('passes', () => {
     cy.visit('http://localhost:4321/');
     cy.argosScreenshot('homepage', {

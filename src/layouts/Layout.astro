@@ -1,4 +1,5 @@
 ---
+import { SimpleAnalytics } from 'astro-simpleanalytics-plugin';
 import '@fontsource-variable/inter';
 type Props = {
   title: string;
@@ -22,6 +23,7 @@ const { title } = Astro.props;
   </head>
   <body class="size-full overflow-y-scroll scroll-smooth bg-background text-text">
     <slot />
+    <SimpleAnalytics partytown={true} />
   </body>
 </html>
 <style is:global>

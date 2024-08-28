@@ -1,1 +1,1 @@
-### https://www.jurajslavicek.com
+### https://jurajslavicek.com

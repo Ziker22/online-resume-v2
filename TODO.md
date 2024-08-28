@@ -19,7 +19,7 @@
 - [ ] - Freelance projects section
 - [ ] - Design review
 - [ ] - SHow blogs
-- [ ] - Analytics
+- [x] - Analytics
 - [ ] - Show gh history
 - [ ] - Witty 404 page
 - [ ] - Fix opengraph problems

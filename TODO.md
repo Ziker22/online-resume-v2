@@ -15,7 +15,7 @@
 ### Nice to haves
 
 - [ ] - Light mode
-- [ ] - Full testimonial page
+- [x] - Full testimonial page - did this on 14-01-2025 using github workspaces (quite underwhelminng experience)
 - [ ] - Freelance projects section
 - [ ] - Design review
 - [ ] - SHow blogs

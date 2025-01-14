@@ -32,6 +32,40 @@ import Testimonial from '../components/sections/testimonialsAndContact/Testimoni
           </div>
         </div>
       </div>
+      <div class="flex h-auto flex-col md:flex-row">
+        <div class="w-full bg-secondary md:w-1/2">
+          <Testimonial
+            text={testimonialsData[3].text}
+            author={testimonialsData[3].author}
+            position={testimonialsData[3].position}
+          />
+        </div>
+        <div class="flex w-full flex-col md:w-1/2">
+          <div class="bg-primary">
+            <Testimonial
+              text={testimonialsData[4].text}
+              author={testimonialsData[4].author}
+              position={testimonialsData[4].position}
+            />
+          </div>
+          <div class="bg-tertiary">
+            <Testimonial
+              text={testimonialsData[5].text}
+              author={testimonialsData[5].author}
+              position={testimonialsData[5].position}
+            />
+          </div>
+        </div>
+      </div>
+      <div class="flex h-auto flex-col md:flex-row">
+        <div class="w-full bg-secondary md:w-1/2">
+          <Testimonial
+            text={testimonialsData[6].text}
+            author={testimonialsData[6].author}
+            position={testimonialsData[6].position}
+          />
+        </div>
+      </div>
     </section>
   </main>
 </Layout>

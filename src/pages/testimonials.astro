@@ -1,0 +1,20 @@
+---
+import Layout from '../layouts/Layout.astro';
+import Testimonial from '../components/sections/testimonialsAndContact/Testimonial.astro';
+import { TESTIMONIALS } from '../data/testimonialsData';
+
+const title = "Testimonials";
+---
+
+<Layout title={title}>
+  <main class="mx-auto max-w-screen-xl px-4 py-8 md:px-8 md:py-16 lg:px-16 lg:py-20">
+    <h1 class="text-center text-4xl font-bold mb-8">Testimonials</h1>
+    <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+      {TESTIMONIALS.map((testimonial) => (
+        <div class="flex flex-col bg-backgroundSecondary p-4 rounded-lg shadow-md">
+          <Testimonial text={testimonial.text} author={testimonial.author} position={testimonial.position} />
+        </div>
+      ))}
+    </div>
+  </main>
+</Layout>
